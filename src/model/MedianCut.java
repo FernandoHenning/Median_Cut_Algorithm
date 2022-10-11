@@ -1,8 +1,14 @@
 package model;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.NoSuchElementException;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class MedianCut {
