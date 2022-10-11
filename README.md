@@ -16,7 +16,5 @@ Since we are dividing the cube into two cubes, the number of colors an image can
 Original             |  $2^n$ colors
 :-------------------------:|:-------------------------:
 ![original](https://user-images.githubusercontent.com/61071974/195164702-9c2049f5-03cc-4b09-b35d-21c42ff731a8.jpg) Original Image | ![two_colors_image](https://user-images.githubusercontent.com/61071974/195165021-b030e9fd-ba03-4f61-8b05-10c1f9ff49fa.jpg) Number of colors: 2
-![original](https://user-images.githubusercontent.com/61071974/195164702-9c2049f5-03cc-4b09-b35d-21c42ff731a8.jpg) Original Image | ![Uploading four_colors_image.jpg…]() Number of colors: 4
-
-
-
+![original](https://user-images.githubusercontent.com/61071974/195164702-9c2049f5-03cc-4b09-b35d-21c42ff731a8.jpg) Original Image | ![four_colors_image](https://user-images.githubusercontent.com/61071974/195165772-6970889b-2fdc-4766-98da-a327e11cf3d7.jpg) Number of colors: 4
+![original](https://user-images.githubusercontent.com/61071974/195164702-9c2049f5-03cc-4b09-b35d-21c42ff731a8.jpg) Original Image | ![eight_colors_image](https://user-images.githubusercontent.com/61071974/195165921-b3a94ad9-8784-4d53-8635-6d68f8bc9222.jpg) Number of colors: 8
