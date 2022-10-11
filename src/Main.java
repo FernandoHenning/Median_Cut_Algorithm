@@ -10,7 +10,7 @@ class Main{
 
     public static void main(String[] args) throws IOException {
         BufferedImage img = ImageIO.read(new File(INPUT_PATH));
-        MedianCut medianCut = new MedianCut(img, 1);
+        MedianCut medianCut = new MedianCut(img, 3);
         medianCut.execute();
     }
 }
