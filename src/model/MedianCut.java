@@ -25,7 +25,24 @@ public class MedianCut {
         splitIntoBuckets(pixelsData, this.depth);
     }
 
-    private void splitIntoBuckets(PixelData[] pixelsData, int depth) {
+    private void splitIntoBuckets(PixelData[] pixelsData, int depth) throws IOException {
+        if (pixelsData.length == 0) {
+            return;
+        }
+        if (depth == 0) {
+            medianCutQuantize(pixelsData);
+            return;
+        }
+
+        int redRange = getMaxRed(pixelsData) - getMinRed(pixelsData);
+        int greenRange = getMaxGreen(pixelsData) - getMinGreen(pixelsData);
+        int blueRange = getMaxBlue(pixelsData) - getMinBlue(pixelsData);
+
+        sortByChannelValues(redRange, greenRange, blueRange, pixelsData);
+
+        int medianIndex = (pixelsData.length + 1) / 2;
+        splitIntoBuckets(Arrays.copyOfRange(pixelsData, 0, medianIndex), depth - 1);
+        splitIntoBuckets(Arrays.copyOfRange(pixelsData, medianIndex, pixelsData.length), depth - 1);
     }
 
     private PixelData[] getPixelsData(int[] bufferedIntRGB) {
